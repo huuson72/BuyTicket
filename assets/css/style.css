@@ -1,313 +1,336 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/* #main{
-
-} */
-
-#header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 75px;
-background-color:rgb(197, 29, 29);
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-
-#nav, .subnav{
-    list-style-type: none ;
-}
-#nav >li{
-    display: inline-block;
-}
-#nav li{
-    
-    position: relative;
-}
-#nav .subnav{
-display: none;
-position: absolute;
-background-color: #fff;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-min-width: 160px;
-}
-#nav >li:hover> a,
-#nav .subnav li:hover a{
-color: #000;
-background-color: #ccc;
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
 }
 
-#nav .subnav a{
-    color:#000;
-    padding: 0 15px;
-    line-height: 50px;
-    
-}   
-#nav >li>a{
-    color: whitesmoke;
-    text-transform: uppercase;
-}
-#nav li a {
-   /* text-transform: uppercase; */
-  
-    display: block;
-    text-decoration: none;
-    padding: 0 20px  ;
-    line-height: 75px;
-    font-family: Arial, Helvetica, sans-serif;
-} 
-#nav li:hover .subnav{
-    display: block;
-}
-.option{
-    
-    display: flex;
-    align-items: center;
-    float: right;
-    line-height: 75px;
-}
-.sign{
-    margin-left: 10px;
-    display: flex;
-}
-.sign-items{
-    padding: 0 20px;
-    color: white;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    
+body {
+	padding: 2rem 4rem;
+	line-height: 1.7;
+	font-family: "Nunito Sans", sans-serif;
+	color: #555;
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom right, #67b26f, #4ca2cd);
 }
 
-
-.sign-items + .sign-items{
-    
-    border-left: solid 1px;
-
-}
-#nav-items,.sign-items{
-    text-decoration: none;
-}
-.sign a:hover {
-color: #333;
-background-color: #ccc;
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	border-radius: 4px;
 }
 
-
-
-#header .search-btn{
-    float: right;
-    line-height: 75px;
-    padding: 0 21px;
-    
-}
-#header .search-btn:hover{
-    background-color: #ccc;
-    cursor: pointer;
-}
-#header .search-icon{
-    color: white;
-    font-size: 20px;
+a {
+	text-decoration: none;
+	color: #333333;
 }
 
-
-
-#slider {
-    margin-top: 46px;
-    padding-top: 50%;
-    background: url('https://recmiennam.com/wp-content/uploads/2018/07/logo-barcelona-4.jpg') top center /cover no-repeat;
+a:hover {
+	color: #f58551;
 }
- 
- #nav {
-     display: inline-block;
- }
- #content .conten-section{
-     text-align: center;
-     width: 800px;
-     padding: 64px 0;
-     
-     margin-left: auto;
-     margin-right: auto;
-    
- }
- .section-heading{
-     font-size: 40px;
-     
-     border-bottom:solid red 1px;
- }
- #content .conten-section .player {
-     font-size: 30px;
-     border-bottom: solid rgb(216, 216, 216) 2px;
- } 
- img{
-    
-     width: 95px;
-     /* line-height: 75px; */
-     /* margin-left: auto;
-     margin-right: auto; */
-     
- }
- 
- #defender{
-     font-size: 30px;
-     border-bottom: solid rgb(216, 216, 216) 2px;
- }
- #defender li{
-     display: inline;
-     list-style: none;
-     font-weight: bolder;
-     font-size: 15px;
-     
- }
- .df1{
-     padding: 20px;
- }
- .RB{
-     
-     /* padding: 200px; */
-     float: right;
-    
-     
- }
- .LB{
-     /* padding: 50px 0 200px 50px; */
-    
-     float:left;
-     
-     
- }
- #CDM{
-     padding:20px;
- }
- .CDMsection li{
-     display: inline;
-     list-style: none;
-     font-weight: bolder;
-     font-size: 15px;
-     
- }
- .cd1heading{
-    font-weight: bolder;
-    font-size: 30px;
-    padding: 20px;
 
- }
- .LDM{
-    float: left;
- }
- .RDM{
-     float: right;
- }
- .CDMsection{
-    border-bottom: solid rgb(216, 216, 216) 2px;
-    padding: 20px;
- }
- .Stheading{
-     
-    font-weight: bolder;
-    font-size: 30px;
-    padding: 20px;
-    
-    
-
- }
- .STsection li{
-    display: inline;
-    list-style: none;
-    font-weight: bolder;
-    font-size: 15px;
-
- }
- 
- .STsection{
-    border-bottom: solid rgb(216, 216, 216) 2px;
-    padding: 20px;
- }
- 
- .LF{
-     float: left;
-     padding: 25px;
- }
- .RF
- {
-     float: right;
-     padding: 25px;
-     
- }
- 
- #manaGe-section {
-     width: 800px;
-     padding: 40px 0;
-    
-     margin-left: auto;
-     margin-right: auto;
-     font-family: Arial, Helvetica, sans-serif;
- }
- #manaGe-section >.manaGe-heading{
-   border-bottom: solid red 1px ;
-   letter-spacing: 4px;
-   font-size: 35px     ;
-   
- }
- .manaGe-heading,
- .section-sub-Manage{
-     text-align: center;
-     margin-top: 20px;
-     font-weight: bolder;
- }
- .section-sub-Manage{
-     font-size: 25px;
- }
- 
- #manaGe-section .about-Manage{
-     margin-top: 20px;
-    
-     text-align: justify;
- } 
-
-.about-Manage{
-   font-family: Arial, Helvetica, sans-serif;
-   line-height: 2;
+button {
+	background-color: #16cc9b;
+	border: 2px solid black;
+	color: #ffffff;
+	transition: all 0.25s linear;
+	cursor: pointer;
+	border-radius: 8px;
 }
-.manaGer-list .manaGer-item img{
-   
-    width: 30%;
-    display: block;
-    margin: auto;
+
+button::after {
+	position: relative;
+	right: 0;
+	/* content: " \276f"; */
+	transition: all 0.15s linear;
 }
-.list-Cup{
-    float: left;
-    padding-top: 15%;
-    list-style: none;
-    line-height: 2;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+
+button:hover {
+	background-color: #f58551;
+	border-color: black;
 }
-.Legend-section{
-    width: 800px;
-     padding: 40px 0;
-    
-     margin-left: auto;
-     margin-right: auto;
 
-    
+button:hover::after {
+	right: -5px;
 }
-.Legend-section .legend-heading{
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+
+button:focus {
+	outline: none;
 }
-  
 
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
 
-    
+input {
+	transition: all 0.25s linear;
+	border-radius: 8px;
+}
 
-/* #content{
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0;
+}
 
-} */
+input {
+	outline: none;
+}
 
-/* #footer{
+.container {
+	width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+}
 
-} */
+/* --- HEADER --- */
+header h1 {
+	font-family: "Bungee Inline", sans-serif;
+	font-weight: 400;
+	font-size: 3rem;
+	color: white;
+	margin-bottom: 2rem;
+	text-align: center;
+	word-spacing: 3px;
+}
+
+header.container {
+	margin-bottom: 1.5rem;
+}
+
+header .breadcrumb li {
+	float: left;
+	padding: 0 6px;
+}
+
+header .breadcrumb li:first-child {
+	padding-left: 2px;
+}
+
+header .breadcrumb li:not(:last-child)::after {
+	content: " \276f";
+	padding-left: 8px;
+}
+
+header .count {
+	float: right;
+}
+
+/* --- PRODUCT LIST --- */
+.products {
+	border-top: 1px solid #ddd;
+}
+
+.products > li {
+	padding: 1rem 0;
+	background-color: #fff;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.row {
+	display: flex;
+}
+
+.col.left {
+	flex-basis: 70%;
+}
+
+.col.right {
+	flex-basis: 30%;
+	display: flex;
+	align-items: center;
+}
+
+.detail {
+	padding: 0 0.5rem;
+	line-height: 2.2rem;
+}
+
+.detail .name {
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.detail .description {
+	font-size: 1rem;
+	margin: 0.7rem 0;
+	line-height: 1.4;
+}
+
+.detail .price {
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.quantity,
+.remove {
+	width: 50%;
+	text-align: center;
+}
+
+.quantity>input {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	left: calc(50% - 30px);
+	background: #fff;
+	border: 2px solid #ddd;
+	text-align: center;
+	font: 600 1.5rem Helvetica, Arial, sans-serif;
+}
+
+.quantity>input:hover,
+.quantity>input:focus {
+	border-color: #f58551;
+}
+
+.close {
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.close:hover {
+	color: #f58551;
+}
+
+/* --- SUMMARY --- */
+.promotion,
+.summary,
+.checkout {
+	float: left;
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+.promotion>label {
+	float: left;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.promotion>input {
+	float: left;
+	width: 80%;
+	font-size: 1rem;
+	padding: 1rem 1.5rem;
+	border: 2px solid #16cc9b;
+}
+
+.promotion:hover>input {
+	border-color: #f58551;
+}
+
+.promotion>button {
+	float: left;
+	width: 20%;
+	padding: 1rem 0.5rem;
+}
+
+.promotion:hover>button {
+	border-color: #f58551;
+	background-color: #f58551;
+}
+
+.promotion>button::after {
+	content: "\276f";
+	font-size: 1rem;
+}
+
+.summary {
+	font-size: 1.2rem;
+	text-align: right;
+}
+
+.summary ul li {
+	padding: 0.5rem 0;
+}
+
+.summary ul li span {
+	display: inline-block;
+	width: 30%;
+}
+
+.summary ul li.total {
+	font-weight: bold;
+}
+
+.hide {
+	display: none !important;
+}
+
+/* --- SMALL SCREEN --- */
+@media all and (max-width: 599px) {
+	.thumbnail img {
+		display: none;
+	}
+
+	.quantity>input {
+		width: 40px;
+		height: 40px;
+		left: calc(50% - 20px);
+	}
+
+	.remove svg {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+/* --- MEDIUM & LARGE SCREEN --- */
+@media all and (min-width: 600px) {
+	html {
+		font-size: 14px;
+	}
+
+	.container {
+		width: 75%;
+		max-width: 960px;
+	}
+
+	.thumbnail,
+	.detail {
+		float: left;
+	}
+
+	.thumbnail {
+		width: 30%;
+	}
+
+	.detail {
+		width: 65%;
+		padding: 0 1rem;
+	}
+
+	.promotion,
+	.summary {
+		width: 50%;
+	}
+
+	.checkout {
+		width: 100%;
+	}
+
+	.checkout,
+	.summary {
+		text-align: right;
+	}
+}
+
+/* --- LARGE SCREEN --- */
+@media all and (min-width: 992px) {
+	html {
+		font-size: 16px;
+	}
+}
