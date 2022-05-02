@@ -17,7 +17,7 @@ let products = [
             'Barcelona vs Real Madrid in March 28 2022 Super El Clasico',
         price: 90,
         image:
-            './assets/img/Contentimg/BARCAREAL.jpg',
+            'https://storage.sharek.sa/public/uploads/events/supercopa-de-espana-2022-real-madrid-cf-vs-fc-barcelona-en-1641210220-poster.jpg',
         count: 1,
     },
     {
@@ -27,7 +27,7 @@ let products = [
             'Barcelona vs Aletico Madrid in 3 April',
         price: 80,
         image:
-            './assets/img/Contentimg/BARCAALT.jpg',
+            'https://pbs.twimg.com/media/FJEnP8kWUAchwQV?format=jpg&name=small',
         count: 1,
     },
 ];
